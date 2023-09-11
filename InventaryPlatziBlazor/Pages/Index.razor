@@ -1,0 +1,18 @@
+﻿@page "/"
+
+<input type="text" @bind-value="@input_values"/>
+<input type="button" value="Haga clic aqui" @onclick="ChangeText" />
+
+<div>
+    @message
+</div>
+
+@code{
+    string message = "Un contenido";
+    string input_values = "";
+
+    private void ChangeText()
+    {
+        message = input_values;
+    }
+}
