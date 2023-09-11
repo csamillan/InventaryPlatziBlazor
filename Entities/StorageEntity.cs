@@ -17,8 +17,8 @@ namespace Entities
         public string ProductId { get; set; }
         public ProductEntity Product { get; set; }  
 
-        public string WhereHouseId { get; set; }
-        public WhereHouseEntity WhereHouse { get; set; }
+        public string WareHouseId { get; set; }
+        public WareHouseEntity WareHouse { get; set; }
 
         public ICollection<InOutEntity> InOuts { get; set; }
     }

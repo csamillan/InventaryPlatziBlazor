@@ -2,19 +2,19 @@
 
 namespace Entities
 {
-    public class WhereHouseEntity
+    public class WareHouseEntity
     {
         [Key]
         [StringLength(50)]
-        public string WhereHouseId { get; set; }
+        public string WareHouseId { get; set; }
 
         [Required]
         [StringLength(100)]
-        public string WhereHouseName { get; set; }
+        public string WareHouseName { get; set; }
 
         [Required]
         [StringLength(100)]
-        public string WhereHouseAddress { get; set; }   
+        public string WareHouseAddress { get; set; }   
 
         public ICollection<StorageEntity> Storages { get; set; }
     }
